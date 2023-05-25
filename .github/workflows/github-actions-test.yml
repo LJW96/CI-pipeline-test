@@ -28,7 +28,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Build SecondApp
-        if: ${{ github.event_path == 'SecondApp/**' }}
+        #if: ${{ github.event_path == 'SecondApp/**' }}
         run: echo Hello, world!      
           
       - name: Build both Apps
