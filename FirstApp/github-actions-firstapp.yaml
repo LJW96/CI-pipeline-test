@@ -6,11 +6,9 @@ name: CI/CD Pipeline
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
+  #  branches: [ "main" ]
     paths:
       - 'FirstApp/**'
-      - 'SecondApp/**'
-      - 'Modules/**'
     
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -26,14 +24,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build FirstApp
-        #if: ${{ github.event_path == 'FirstApp/**' }}
         run: |
           echo Helo, world
-
-      # Runs a set of commands using the runners shell
-      - name: Build SecondApp
-        #if: ${{ github.event_path == 'SecondApp/**' }}
-        run: echo Hello, world!      
-          
-      - name: Build both Apps
-        run: echo Hello, world!
