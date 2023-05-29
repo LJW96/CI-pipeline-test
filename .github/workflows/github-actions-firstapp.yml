@@ -23,6 +23,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Build FirstApp
-        #if: ${{ github.event_path == 'FirstApp/**' }}
+      # Build FirstApp
         run: |
-          echo Helo, world
+          echo Helo, Firstapp!
