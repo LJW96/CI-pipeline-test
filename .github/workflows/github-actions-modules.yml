@@ -22,7 +22,10 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Build Modules
-        #if: ${{ github.event_path == 'FirstApp/**' }}
+      - name: Build FirstApp
         run: |
-          echo ok!
+          echo helo, FirstApp!
+          
+      - name: Build SecondApp
+        run: |
+          echo helo, SecondApp!
