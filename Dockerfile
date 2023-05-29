@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM alpine:latest
 
 #straight go to /var/www
 WORKDIR /var/www
